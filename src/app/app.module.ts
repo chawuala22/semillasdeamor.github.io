@@ -6,12 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { BlogComponent } from './shared/blog/blog.component';
+import { OremosComponent } from './shared/oremos/oremos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    BlogComponent,
+    OremosComponent
   ],
   imports: [
     BrowserModule,
