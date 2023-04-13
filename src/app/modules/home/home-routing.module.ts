@@ -9,38 +9,30 @@ import { TestimoniosComponent } from './iglesia/testimonios/testimonios.componen
 import { TrayectoriaComponent } from './iglesia/trayectoria/trayectoria.component';
 
 const routes: Routes = [
-  {path : '', component : HomeComponent},
+  { path: '', component: HomeComponent },
   {
     path: 'iglesia',
-    component: IglesiaComponent,
-    children:[
-      {
-        path: 'homepage',
-        component: HomeComponent
-      },
-      {
-        path: 'nosotros',
-        component: NosotrosComponent
-      },
+    children: [
+      { path: '', component: IglesiaComponent },
       {
         path: 'nuestra-cobertura',
-        component: NuestraCoberturaComponent
+        component: NuestraCoberturaComponent,
       },
       {
         path: 'testimonios',
-        component: TestimoniosComponent
+        component: TestimoniosComponent,
       },
       {
         path: 'trayectoria',
-        component: TrayectoriaComponent
+        component: TrayectoriaComponent,
       },
-    ]
+    ],
   },
-  {path : 'conexion', component : ConexionComponent},
+  { path: 'conexion', component: ConexionComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class HomeRoutingModule { }
+export class HomeRoutingModule {}
