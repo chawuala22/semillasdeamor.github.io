@@ -10,25 +10,8 @@ import { TrayectoriaComponent } from './iglesia/trayectoria/trayectoria.componen
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  {
-    path: 'iglesia',
-    children: [
-      { path: '', component: IglesiaComponent },
-      {
-        path: 'nuestra-cobertura',
-        component: NuestraCoberturaComponent,
-      },
-      {
-        path: 'testimonios',
-        component: TestimoniosComponent,
-      },
-      {
-        path: 'trayectoria',
-        component: TrayectoriaComponent,
-      },
-    ],
-  },
   { path: 'conexion', component: ConexionComponent },
+  { path: 'iglesia', component: IglesiaComponent },
 ];
 
 @NgModule({
