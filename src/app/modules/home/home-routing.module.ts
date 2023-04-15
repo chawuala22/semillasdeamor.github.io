@@ -3,15 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home.component';
 import { IglesiaComponent } from './iglesia/iglesia.component';
 import { ConexionComponent } from './conexion/conexion.component';
-import { NosotrosComponent } from './iglesia/nosotros/nosotros.component';
-import { NuestraCoberturaComponent } from './iglesia/nuestra-cobertura/nuestra-cobertura.component';
-import { TestimoniosComponent } from './iglesia/testimonios/testimonios.component';
-import { TrayectoriaComponent } from './iglesia/trayectoria/trayectoria.component';
+import { BlogComponent } from 'src/app/shared/blog/blog.component';
+import { OremosComponent } from 'src/app/shared/oremos/oremos.component';
+import { QuienesSomosComponent } from 'src/app/shared/quienes-somos/quienes-somos.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'conexion', component: ConexionComponent },
   { path: 'iglesia', component: IglesiaComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'oremos', component: OremosComponent },
+  { path: 'nosotros', component: QuienesSomosComponent },
 ];
 
 @NgModule({
