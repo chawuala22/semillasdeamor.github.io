@@ -1,0 +1,42 @@
+.container {
+  margin-top: 2%;
+  h2 {
+    padding-left: 2%;
+  }
+  h1 {
+    color: #801111;
+  }
+  .container-content {
+    display: flex;
+    .container-card {
+      display: flex;
+      margin: 2% 0% 2% 2%;
+      flex-direction: column;
+      justify-content: center;
+      width: 20vw;
+      height: 40vh;
+      border: 1px solid #801111;
+      border-radius: 2%;
+      transition: all 0.5s ease-in-out;
+      transform: scale(1);
+      cursor: pointer;
+      .container-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40vh;
+        img {
+          width: 100%;
+        }
+      }
+      .container-text {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+    .container-card:hover {
+      transform: scale(1.1);
+    }
+  }
+}

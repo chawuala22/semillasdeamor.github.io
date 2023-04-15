@@ -1,4 +1,7 @@
 .container {
+  h1 {
+    color: #801111;
+  }
   .container-text {
     padding-left: 2%;
     p {
@@ -8,14 +11,14 @@
   .container-info {
     display: flex;
     .row-1 {
-      padding: 2% 2% 0 2%;
+      padding: 2% 1% 0 2%;
       width: 50%;
       p {
         text-align: justify;
       }
     }
     .row-2 {
-      padding: 2% 2% 0 2%;
+      padding: 2% 0% 0 2%;
       width: 50%;
       p {
         text-align: justify;

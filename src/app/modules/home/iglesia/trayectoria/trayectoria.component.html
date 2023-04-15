@@ -1,5 +1,15 @@
 <div class="container">
-  <h1>Desde el 2013</h1>
-  - Han aceptado a Jesús +1.300 Personas. - Se han bautizado +540 Personas - 80
-  Matrimonios celebrados - 3 Encuentros ABBA
+  <h1><strong>NUESTRA TRAYECTORIA</strong></h1>
+  <h2>DESDE EL 2013</h2>
+  <div class="container-content">
+    <div *ngFor="let option of info" class="container-card">
+      <div class="container-img">
+        <img src="{{ option.img }}" alt="foto" />
+      </div>
+      <div class="container-text">
+        <h3>{{ option.tittle }}</h3>
+        <p>{{ option.text }}</p>
+      </div>
+    </div>
+  </div>
 </div>
