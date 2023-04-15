@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+/* Importa la fuente que deseas usar */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Establece el font-family global */
+body {
+  font-family: 'Montserrat', sans-serif;
+}

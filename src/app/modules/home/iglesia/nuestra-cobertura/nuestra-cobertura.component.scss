@@ -1,0 +1,40 @@
+.container {
+  .container-text {
+    padding-left: 2%;
+    p {
+      margin-bottom: 0px;
+    }
+  }
+  .container-info {
+    display: flex;
+    .row-1 {
+      padding: 2% 2% 0 2%;
+      width: 50%;
+      p {
+        text-align: justify;
+      }
+    }
+    .row-2 {
+      padding: 2% 2% 0 2%;
+      width: 50%;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+  .container-button {
+    display: flex;
+    justify-content: center;
+    button {
+      background-color: #801111;
+      color: #fff;
+      border: 1px solid #000;
+      border-radius: 1rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    }
+    button:hover {
+      background-color: #fff;
+      color: #801111;
+    }
+  }
+}
