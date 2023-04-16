@@ -12,11 +12,12 @@ import { NosotrosComponent } from './iglesia/nosotros/nosotros.component';
 import { NuestraCoberturaComponent } from './iglesia/nuestra-cobertura/nuestra-cobertura.component';
 import { TrayectoriaComponent } from './iglesia/trayectoria/trayectoria.component';
 import { TestimoniosComponent } from './iglesia/testimonios/testimonios.component';
-import { OremosComponent } from 'src/app/shared/oremos/oremos.component';
-import { BlogComponent } from 'src/app/shared/blog/blog.component';
-import { QuienesSomosComponent } from 'src/app/shared/quienes-somos/quienes-somos.component';
+import { OremosComponent } from 'src/app/components/oremos/oremos.component';
+import { BlogComponent } from 'src/app/components/blog/blog.component';
+import { QuienesSomosComponent } from 'src/app/components/quienes-somos/quienes-somos.component';
 
 import { SwiperModule } from 'swiper/angular';
+import { KidsComponent } from 'src/app/components/kids/kids.component';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -31,7 +32,8 @@ import { SwiperModule } from 'swiper/angular';
     TestimoniosComponent,
     BlogComponent,
     OremosComponent,
-    QuienesSomosComponent
+    QuienesSomosComponent,
+    KidsComponent
   ],
   imports: [
     CommonModule,
