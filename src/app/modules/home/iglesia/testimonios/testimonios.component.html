@@ -1,1 +1,84 @@
-<p>testimonios works!</p>
+<div class="container">
+    <h1><strong>NUESTROS TESTIMONIOS</strong></h1>
+    <h2>Te invitamos a ver alguno de nuestros testimonios</h2>
+  <div class="carousel">
+    <div
+      id="carouselExampleDark"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="container-main">
+              <div class="container-info">
+                <div class="container-img">
+                <img src="../../../../../assets/images/conexion.PNG" alt="">
+                </div>
+                <div class="container-text">
+                  <h1>Miguel Rojas</h1>
+                  <p style="text-align: justify">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Saepe itaque, aperiam qui molestias, aliquid beatae harum
+                    dolorem ipsa odit mollitia a! Fugit iusto at commodi
+                    consectetur quia repellendus? Quae, inventore! Lorem ipsum
+                    dolor sit amet consectetur, adipisicing elit. Quaerat earum
+                    quis quos odio rem ex optio alias laborum praesentium
+                    beatae. Hic debitis repudiandae harum quasi corrupti a
+                    mollitia minima est. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Expedita maiores facilis totam quasi
+                    aspernatur doloremque dignissimos odio blanditiis, provident
+                    error, esse adipisci quas aperiam aliquam sapiente modi quae
+                    atque rem.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div *ngFor="let testimonio of testimonios" class="carousel-item">
+          <div class="container">
+            <div class="container-main">
+              <div class="container-info">
+                <div class="container-img">
+                  <img
+                    src="{{testimonio.img}}"
+                    alt=""
+                  />
+                </div>
+                <div class="container-text">
+                  <h1>{{testimonio.title}}</h1>
+                  <p style="text-align: justify">
+                    {{testimonio.descripcion}}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

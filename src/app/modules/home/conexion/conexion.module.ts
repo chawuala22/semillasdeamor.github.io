@@ -7,7 +7,6 @@ import { IglesiaComponent } from '../iglesia/iglesia.component';
 
 @NgModule({
   declarations: [
-    IglesiaComponent
   ],
   imports: [
     CommonModule,

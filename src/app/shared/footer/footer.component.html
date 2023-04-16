@@ -1,5 +1,41 @@
-<footer>
-    <div class="container">
-        
+<footer
+  [ngClass]="
+    ruta == 'iglesia'
+      ? 'footer-iglesia'
+      : ruta == 'conexion'
+      ? 'footer-conexion'
+      : 'footer-iglesia'
+  "
+>
+  <div class="container">
+    <div class="container-main">
+      <div class="container-ministerios">
+        <h3>Ministerios</h3>
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+        </ul>
+      </div>
+      <div class="container-cuando">
+        <h3>Nuestra reuniones</h3>
+
+        <ul>
+          <li>Domingos</li>
+          <li>Viernes</li>
+          <li>¿Donde?</li>
+          <li>Carrera 100 #148-58</li>
+        </ul>
+      </div>
+      <div class="container-online">
+        <h3>Redes sociales</h3>
+        <ul>
+          <li><a href="">Facebook</a></li>
+          <li><a href="">Instagram</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="derechos">© 2023 Iglesia Semillas de Amor</div>
+  </div>
 </footer>

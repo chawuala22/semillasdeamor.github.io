@@ -16,7 +16,7 @@ import { OremosComponent } from 'src/app/shared/oremos/oremos.component';
 import { BlogComponent } from 'src/app/shared/blog/blog.component';
 import { QuienesSomosComponent } from 'src/app/shared/quienes-somos/quienes-somos.component';
 
-
+import { SwiperModule } from 'swiper/angular';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -35,7 +35,8 @@ import { QuienesSomosComponent } from 'src/app/shared/quienes-somos/quienes-somo
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SwiperModule
   ]
 })
 export class HomeModule { }

@@ -1,0 +1,108 @@
+.footer-iglesia {
+  background-color: #801111;
+  .container {
+    .container-main {
+      display: flex;
+      justify-content: space-between;
+      .container-ministerios {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul li {
+          color: #fff;
+          list-style: none;
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+      .container-cuando {
+        ul li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #fff;
+          list-style: none;
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+      .container-online {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul li {
+          list-style: none;
+
+          text-decoration: none;
+        }
+        h3 {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    .derechos {
+      color: #fff;
+    }
+  }
+}
+.footer-conexion {
+  background-color: #c16200;
+  .container {
+    .container-main {
+      display: flex;
+      justify-content: space-between;
+      .container-ministerios {
+        ul li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #fff;
+          list-style: none;
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+      .container-cuando {
+        ul li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: #fff;
+          list-style: none;
+        }
+        h3 {
+          color: #fff;
+        }
+      }
+      .container-online {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        ul li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          list-style: none;
+          text-decoration: none;
+        }
+        h3 {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+      }
+    }
+    .derechos {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.container {
+  margin-top: 2%;
+  h2 {
+    padding-left: 2%;
+  }
+  h1 {
+    color: #801111;
+  }
+
+  .carousel {
+    .container {
+      .container-main {
+        padding-left: 2%;
+        .container-info {
+          border: 1px solid #000;
+          border-radius: 6px;
+          display: flex;
+          .container-img {
+            width: 60%;
+            height: 50%;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+            img {
+              width: 50%;
+            }
+          }
+          .container-text {
+            padding: 2%;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
