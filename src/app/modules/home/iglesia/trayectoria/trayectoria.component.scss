@@ -7,8 +7,20 @@
     color: #801111;
   }
   .container-content {
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
     display: flex;
     .container-card {
+      @media screen and (max-width: 1024px) {
+        display: flex;
+        margin: 2% 0% 2% 4%;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        border: 1px solid #801111;
+        border-radius: 2%;
+      }
       display: flex;
       margin: 2% 0% 2% 2%;
       flex-direction: column;
@@ -26,7 +38,7 @@
         justify-content: center;
         height: 40vh;
         img {
-          width: 100%;
+          width: 75%;
         }
       }
       .container-text {
