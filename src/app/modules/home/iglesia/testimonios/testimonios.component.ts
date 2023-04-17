@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbCarouselConfig } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-testimonios',
@@ -6,25 +7,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./testimonios.component.scss'],
 })
 export class TestimoniosComponent implements OnInit {
-  
   testimonios = [
     {
-      img: 'https://img.freepik.com/vector-premium/personaje-avatar-moda-icono-hombres-ilustracion-vector-plano-gente-alegre-feliz-marco-redondo-retratos-masculinos-grupo-equipo-adorables-chicos-aislados-sobre-fondo-blanco_275421-281.jpg?w=2000',
-      title: 'asdas',
-      descripcion: 'sadaqawsdsd',
+      img: '../../../../../assets/images/bautizo.png',
+      title: 'Miguel Rojas',
+      descripcion: 'Esto es una breve descipcion de mi testimonio',
     },
     {
-      img: 'https://previews.123rf.com/images/tuktukdesign/tuktukdesign1608/tuktukdesign160800065/61010902-icono-de-usuario-hombre-perfil-hombre-de-negocios-avatar-ilustraci%C3%B3n-vectorial-persona-glifo.jpg',
-      title: 'asdas',
-      descripcion: 'sadasd',
+      img: '../../../../../assets/images/jesus.png',
+      title: 'Nicolas Fuentes',
+      descripcion: 'Esto es una breve descipcion de mi testimonio',
     },
     {
-      img: '../../../../../assets/videos/video1.mp4',
-      title: 'asdas',
-      descripcion: 'sadasd',
+      img: '../../../../../assets/images/encuentro.png',
+      title: 'Milena Guerra',
+      descripcion: 'Esto es una breve descipcion de mi testimonio',
+    },
+    {
+      img: '../../../../../assets/images/encuentro.png',
+      title: 'Milena Guerra',
+      descripcion: 'Esto es una breve descipcion de mi testimonio',
     },
   ];
-  constructor() {}
+  constructor(private _config: NgbCarouselConfig) {
+    _config.pauseOnHover = true;
+  }
 
   ngOnInit(): void {}
 }

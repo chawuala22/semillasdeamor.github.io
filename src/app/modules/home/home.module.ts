@@ -18,6 +18,7 @@ import { QuienesSomosComponent } from 'src/app/components/quienes-somos/quienes-
 
 import { SwiperModule } from 'swiper/angular';
 import { KidsComponent } from 'src/app/components/kids/kids.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     HomeComponent,
@@ -38,7 +39,8 @@ import { KidsComponent } from 'src/app/components/kids/kids.component';
   imports: [
     CommonModule,
     HomeRoutingModule,
-    SwiperModule
+    SwiperModule,
+    NgbModule
   ]
 })
 export class HomeModule { }
