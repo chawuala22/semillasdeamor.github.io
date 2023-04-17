@@ -1,6 +1,45 @@
-.container-main{
+.video-container {
+  position: relative;
+  video {
+    opacity: 0.3;
+    width: 100%;
+  }
+}
+
+.overlay {
+  @media screen and (max-width: 1024px) {
+    position: absolute;
+    border-radius: 2%;
+    padding: 2%;
+    border: 1px solid;
+    top: 29%;
+    left: 6%;
+    width: 87%;
+    height: 50%;
     display: flex;
-    video{
-        width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: 24px;
+    text-align: center;
+    p {
+      font-size: 12px;
+      margin-top: 0;
+      margin-bottom: 0;
     }
+  }
+  position: absolute;
+  border-radius: 2%;
+  padding: 2%;
+  border: 1px solid;
+  top: 29%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 24px;
+  text-align: center;
 }

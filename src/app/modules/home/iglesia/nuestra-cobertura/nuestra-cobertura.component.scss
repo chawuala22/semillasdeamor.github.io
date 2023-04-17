@@ -9,6 +9,9 @@
     }
   }
   .container-info {
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+    }
     display: flex;
     .row-1 {
       padding: 2% 1% 0 2%;
@@ -22,6 +25,14 @@
       width: 50%;
       p {
         text-align: justify;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      .row-1,
+      .row-2 {
+        width: 100%;
+        padding: 2%;
       }
     }
   }
@@ -38,6 +49,11 @@
     button:hover {
       background-color: #fff;
       color: #801111;
+    }
+    @media screen and (max-width: 1024px) {
+      button{
+        margin-bottom: 1rem;
+      }
     }
   }
 }

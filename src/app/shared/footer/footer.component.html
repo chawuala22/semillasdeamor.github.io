@@ -12,21 +12,27 @@
       <div class="container-ministerios">
         <h3>Ministerios</h3>
         <ul>
-          <li>Alabanza</li>
-          <li>Ayuno</li>
-          <li>Intersecion</li>
-          <li>Voluntarios</li>
-          <li> <a routerLink="../kids">Kids</a></li>
+          <li><a routerLink="../alabanza">Alabanza</a></li>
+          <li><a routerLink="../ayuno">Ayuno</a></li>
+          <li><a routerLink="../intersecion">Intersecion</a></li>
+          <li><a routerLink="../voluntarios">Voluntarios</a></li>
+          <li><a routerLink="../kids">Kids</a></li>
         </ul>
       </div>
       <div class="container-cuando">
         <h3>Nuestra reuniones</h3>
-
         <ul>
-          <li>Domingos</li>
-          <li>Viernes</li>
-          <li>¿Donde?</li>
-          <li>Carrera 100 #148-58</li>
+          <li>Domingos 9:00am</li>
+          <li>Viernes 7:00pm</li>
+          <li>Sábado 6:00pm</li>
+          <li>¿Dónde?</li>
+          <li
+            style="cursor: pointer"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Avenida Libertador #13-87
+          </li>
         </ul>
       </div>
       <div class="container-online">
@@ -38,5 +44,40 @@
       </div>
     </div>
     <div class="derechos">© 2023 Iglesia Semillas de Amor</div>
+  </div>
+  <!-- Modal -->
+  <div
+    class="modal fade"
+    id="exampleModal"
+    tabindex="-1"
+    aria-labelledby="exampleModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">
+            Mapa para llegar a la iglesia
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.2366397740975!2d-74.20436542404714!3d11.243994850393486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef4f56e230245f7%3A0x45820a5d525e5110!2sAv.%20El%20Libertador%20%2313-87%2C%20Comuna%204%2C%20Santa%20Marta%2C%20Magdalena!5e0!3m2!1ses!2sco!4v1681690541062!5m2!1ses!2sco"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
   </div>
 </footer>

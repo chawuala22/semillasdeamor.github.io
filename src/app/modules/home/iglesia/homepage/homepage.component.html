@@ -1,3 +1,14 @@
-<!-- <div class="container-main">
-    <video src="../../../../../assets/videos/Vídeo sin título ‐ Hecho con Clipchamp.mp4" autoplay muted loop></video>
-</div> -->
+<!-- <div class="video-container">
+    <video  autoplay loop muted></video>
+    <div class="overlay">{{ overlayText }}</div>
+  </div> -->
+  
+  <div class="video-container">
+    <video autoplay loop muted>
+      <source src="../../../../../assets/videos/videoHome.mp4" type="video/mp4">
+      Tu navegador no soporta este formato de video.
+    </video>
+    <div class="overlay">
+      <p>{{overlayText}}</p>
+    </div>
+  </div>
